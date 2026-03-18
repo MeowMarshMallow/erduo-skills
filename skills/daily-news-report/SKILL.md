@@ -118,8 +118,8 @@ output_schema:
       quality_score: 1-5     # 质量评分
 
 constraints:
-  filter: "AI/Agent/大模型/前沿AI工程/AI提效实践"
-  exclude: "非AI主题/泛科普/营销软文/过度学术化/招聘帖"
+  filter: "AI优先（Agent/大模型/前沿AI工程/AI提效实践），同时保留与AI产业和工程方法强相关的泛技术内容"
+  exclude: "泛科普/营销软文/过度学术化/招聘帖/与AI及技术趋势无关内容"
   max_items_per_source: 10
   skip_on_error: true
 
@@ -248,8 +248,8 @@ Task 调用:
     }
 
     筛选标准：
-    - 保留：AI/Agent/大模型/前沿AI工程/AI提效实践
-    - 排除：非AI主题/泛科普/营销软文/过度学术化/招聘帖
+    - 保留：AI优先（Agent/大模型/前沿AI工程/AI提效实践），同时保留与AI产业和工程方法强相关内容
+    - 排除：泛科普/营销软文/过度学术化/招聘帖/与AI及技术趋势无关内容
 
     直接返回 JSON，不要解释。
 ```
@@ -274,8 +274,8 @@ Task 调用:
       - keywords: string[]
       - quality_score: 1-5
     constraints:
-      filter: AI/Agent/大模型/前沿AI工程/AI提效实践
-      exclude: 非AI主题/泛科普/营销软文/过度学术化
+      filter: AI优先（Agent/大模型/前沿AI工程/AI提效实践），同时保留与AI产业和工程方法强相关内容
+      exclude: 泛科普/营销软文/过度学术化/与AI及技术趋势无关内容
 ```
 
 ## 输出模板
