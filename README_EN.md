@@ -166,7 +166,7 @@ Reports are generated in structured Markdown format, stored in the `NewsReport/`
     Load this repository into your Agent environment (e.g., Claude Desktop, Zed with MCP). The Agent will automatically recognize skills such as `daily-news-report` and `ak-rss-digest`.
 
     *Prompt Example:*
-    > "Generate today's news report."
+    > "Generate today's AI news report."
     
     > "Use `$ak-rss-digest` to generate a curated RSS digest for the latest week."
 

@@ -1,6 +1,6 @@
 ---
 name: ak-rss-digest
-description: Curate a Chinese reading digest from a fixed bundle of RSS and Atom feeds, with a strong preference for AI agent thinking, frontier AI commentary, deep interviews, and non-boring high-signal essays. Use when Codex needs to pull the latest week's posts by default, or a specific day's posts when explicitly requested, summarize them, score each article on a 10-point scale, and output only the posts scoring above 7 in a concise Chinese daily-brief style.
+description: Curate a Chinese AI-focused reading digest from a fixed bundle of RSS and Atom feeds, with a strong preference for AI agent thinking, frontier AI commentary, deep interviews, and non-boring high-signal essays. Trigger only for explicit AI-brief intents such as “生成今天的AI日报”, “看看今天的AI快报”, “AI精选文章”, or direct `$ak-rss-digest` invocation. Do not trigger for non-AI or generic daily-report requests.
 ---
 
 # AK RSS Digest

@@ -166,7 +166,7 @@ graph TD
     将此仓库加载到您的 Agent 环境中（例如 Claude Desktop 或支持 MCP 的 Zed）。Agent 将自动识别 `daily-news-report`、`ak-rss-digest` 等技能。
 
     *提示词示例:*
-    > “生成今天的日报。”
+    > “生成今天的AI日报。”
     
     > “用 `$ak-rss-digest` 生成最近一周值得看的 RSS 摘要。”
 

@@ -1,6 +1,6 @@
 ---
 name: daily-news-report
-description: 基于预设 URL 列表抓取内容，筛选高质量技术信息并生成每日 Markdown 报告。
+description: 基于预设 URL 列表抓取内容，筛选高质量 AI / Agent / 大模型相关信息并生成每日 Markdown 报告。仅在用户明确提到“AI日报 / AI快报 / AI新闻简报 / AI精选”时触发，不用于泛科技或其他主题日报。
 argument-hint: [可选: 日期]
 disable-model-invocation: false
 user-invocable: true
@@ -118,8 +118,8 @@ output_schema:
       quality_score: 1-5     # 质量评分
 
 constraints:
-  filter: "前沿技术/高深技术/提效技术/实用资讯"
-  exclude: "泛科普/营销软文/过度学术化/招聘帖"
+  filter: "AI/Agent/大模型/前沿AI工程/AI提效实践"
+  exclude: "非AI主题/泛科普/营销软文/过度学术化/招聘帖"
   max_items_per_source: 10
   skip_on_error: true
 
@@ -248,8 +248,8 @@ Task 调用:
     }
 
     筛选标准：
-    - 保留：前沿技术/高深技术/提效技术/实用资讯
-    - 排除：泛科普/营销软文/过度学术化/招聘帖
+    - 保留：AI/Agent/大模型/前沿AI工程/AI提效实践
+    - 排除：非AI主题/泛科普/营销软文/过度学术化/招聘帖
 
     直接返回 JSON，不要解释。
 ```
@@ -274,8 +274,8 @@ Task 调用:
       - keywords: string[]
       - quality_score: 1-5
     constraints:
-      filter: 前沿技术/高深技术/提效技术/实用资讯
-      exclude: 泛科普/营销软文/过度学术化
+      filter: AI/Agent/大模型/前沿AI工程/AI提效实践
+      exclude: 非AI主题/泛科普/营销软文/过度学术化
 ```
 
 ## 输出模板
